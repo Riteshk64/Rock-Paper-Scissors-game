@@ -35,24 +35,24 @@ if(!isAutoPlay){
 }
 
 document.querySelector('.js-rock-button').addEventListener('click', () => {
-playGame('Rock');
+playGame('rock');
 });
 
 document.querySelector('.js-paper-button').addEventListener('click', () => {
-playGame('Paper');
+playGame('paper');
 });
 
 document.querySelector('.js-scissor-button').addEventListener('click', () => {
-playGame('Scissor');
+playGame('scissor');
 });
 
 document.body.addEventListener('keydown',(event) => {
 if(event.key === 'r'){
-    playGame('Rock');
+    playGame('rock');
 } else if(event.key === 'p'){
-    playGame('Paper');
+    playGame('paper');
 } else if(event.key === 's'){
-    playGame('Scissor');
+    playGame('scissor');
 } else if(event.key === 'a'){
     autoPlay();
 } else if(event.key === 'Backspace'){
@@ -65,28 +65,28 @@ const computerMove = pickComputerMove();
 
 let result='';
 
-if(playerMove === 'Scissor'){
-    if(computerMove === 'Scissor'){
+if(playerMove === 'scissor'){
+    if(computerMove === 'scissor'){
     result='Tie';
-    } else if(computerMove === 'Rock'){
+    } else if(computerMove === 'rock'){
         result='You Lose';
-    } else if(computerMove === 'Paper'){
+    } else if(computerMove === 'paper'){
         result='You Win';
     }
-}else if(playerMove === 'Paper'){
-    if(computerMove === 'Paper'){
+}else if(playerMove === 'paper'){
+    if(computerMove === 'paper'){
         result='Tie';
-    } else if(computerMove === 'Scissor'){
+    } else if(computerMove === 'scissor'){
         result='You Lose';
-    } else if(computerMove === 'Rock'){
+    } else if(computerMove === 'rock'){
         result='You Win';
     }
-}else if(playerMove === 'Rock'){
-    if(computerMove === 'Rock'){
+}else if(playerMove === 'rock'){
+    if(computerMove === 'rock'){
         result='Tie';
-    } else if(computerMove === 'Paper'){
+    } else if(computerMove === 'paper'){
         result='You Lose';
-    } else if(computerMove === 'Scissor'){
+    } else if(computerMove === 'scissor'){
         result='You Win';
     }
 }
@@ -122,11 +122,11 @@ const randomNum=Math.random();
 let computerMove='';
 
 if(randomNum >= 0 && randomNum < 1/3){
-    computerMove='Rock';
+    computerMove='rock';
 } else if(randomNum >= 1/3 && randomNum < 2/3){
-    computerMove='Paper';
+    computerMove='paper';
 } else {
-    computerMove='Scissor';
+    computerMove='scissor';
 }
 
 return computerMove;

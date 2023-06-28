@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="styles/rps.css">
+</head>
+<body>
+    <p class="title">
+        Rock Paper Scissors
+    </p>
+
+    <button class="move-button js-rock-button">
+        <img src="images/rock-emoji.png" class="move">
+    </button>
+
+    <button class="move-button js-paper-button">
+        <img src="images/paper-emoji.png" class="move">
+    </button>
+
+    <button class="move-button js-scissor-button">
+        <img src="images/scissor-emoji.png" class="move">
+    </button>
+
+    <p class="js-result result">RPS GAME!</p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+
+    <button class="reset-button js-reset-button">
+        Reset Score
+    </button>
+
+    <button class="auto-play-button js-auto-play-button">Auto Play</button>
+
+    <div class="js-confirmation-message confirmation-message"></div>
+
+    <p>Keyboard Controls:</p>
+    <p>r: Pick Rock</p>
+    <p>p: Pick Paper</p>
+    <p>s: Pick Scissors</p>
+    <p>a: Start/Stop Auto Play</p>
+    <p>Backspace: Reset the score</p>
+
+    <script src="javascript/rps.js"></script>
+</body>
+</html>

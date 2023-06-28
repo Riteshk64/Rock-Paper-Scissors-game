@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.move{
+    height: 70px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.move-button{
+    background-color: transparent;
+    border: 3px solid white;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.result{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.result-win{
+    color: greenyellow;
+}
+
+.result-lose{
+    color: red;
+}
+
+.score{
+    margin-top: 50px;
+}
+
+.reset-button,.auto-play-button{
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.yes-button, .no-button{
+    background-color: white;
+    border: none;
+    font-size: 13px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.confirmation-message{
+    align-items:center;
+    justify-content:center;
+}
